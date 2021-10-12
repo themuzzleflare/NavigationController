@@ -1,3 +1,3 @@
 # NavigationController
 
-A description of this package.
+UINavigationController for AppKit

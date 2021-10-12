@@ -11,11 +11,14 @@ let package = Package(
   products: [
     .library(
       name: "NavigationController",
-      targets: ["NavigationController"]),
+      targets: [
+        "NavigationController"
+      ]
+    )
   ],
   targets: [
     .target(
-      name: "NavigationController",
-      dependencies: [])
+      name: "NavigationController"
+    )
   ]
 )

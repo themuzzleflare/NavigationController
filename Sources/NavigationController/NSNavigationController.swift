@@ -1,7 +1,7 @@
 import AppKit
 
 public class NSNavigationController: NSViewController {
-  public private (set) var viewControllers: [NSViewController] = []
+  public private(set) var viewControllers: [NSViewController] = []
   
   open override func loadView() {
     view = NSView()
@@ -54,13 +54,11 @@ extension NSNavigationController {
     }
   }
   
-  @discardableResult
-  public func popViewControllerAnimated() -> NSViewController? {
+  @discardableResult public func popViewControllerAnimated() -> NSViewController? {
     return popViewController(animated: true)
   }
   
-  @discardableResult
-  public func popViewController(animated: Bool) -> NSViewController? {
+  @discardableResult public func popViewController(animated: Bool) -> NSViewController? {
     guard let oldVC = viewControllers.popLast() else {
       return nil
     }
